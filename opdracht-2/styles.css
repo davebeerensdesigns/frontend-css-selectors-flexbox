@@ -3,3 +3,72 @@
 ========================================================= */
 
 /* Schrijf hier  jouw CSS! */
+
+/* ======================================================
+   Opdracht 2.1
+========================================================= */
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* ======================================================
+   Opdracht 2.2
+========================================================= */
+.two{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ======================================================
+   Opdracht 2.3
+========================================================= */
+.three{
+    display: flex;
+    justify-content: space-between;
+}
+
+.three ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.three ul li{
+    display: inline-flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* ======================================================
+   Opdracht 2.4
+========================================================= */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======================================================
+   Opdracht 2.5
+========================================================= */
+.five{
+    display: flex;
+}
+@media only screen and (max-width: 768px) {
+    .five{
+        flex-wrap: wrap;
+    }
+    .five article{
+        box-sizing: border-box;
+        flex:0 0 50%;
+        max-width: 50%
+    }
+    .five article:last-child{
+        flex:0 0 100%;
+        max-width: 100%
+    }
+}
